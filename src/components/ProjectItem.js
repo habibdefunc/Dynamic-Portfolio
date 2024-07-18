@@ -16,7 +16,7 @@ const ProjectItem = ({ title, backgroundImg, tech, projectUrl }) => {
         <p className="pb-4 pt-2 text-slate-600 font-bold text-center">{tech}</p>
         <Link to={projectUrl}>
           <p className="text-center py-3 rounded-lg bg-[linear-gradient(134deg,_#3BF686_40.75%,_#4CA9FF_90.52%)] text-navbar font-bold text-lg cursor-pointer hover:shadow-md hover:shadow-slate-500 ease-in duration-500">
-            Go to Demo
+            Go to Website
           </p>
         </Link>
       </div>
