@@ -1,12 +1,11 @@
 /** @format */
 
-import { Link } from "react-router-dom";
-import React, { useState } from "react";
-import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+// import { Link } from "react-router-dom";
+// import { AiOutlineMail } from "react-icons/ai";
+// import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaInstagram } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
-import CV from "../assets/Habib-Ritonga.pdf";
+// import CV from "../assets/Habib-Ritonga.pdf";
 
 const Contact = () => {
   return (
@@ -52,7 +51,7 @@ const Contact = () => {
                     </div>
                   </a>
 
-                  <a
+                  {/* <a
                     href={CV}
                     download="CV-Habib Ritonga"
                     target="_blank"
@@ -63,7 +62,7 @@ const Contact = () => {
                         <BsFillPersonLinesFill className="text-navbar" />
                       </div>
                     </div>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

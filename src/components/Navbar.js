@@ -3,8 +3,8 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
-import { Link } from "react-router-dom";
-import CV from "../assets/Habib-Ritonga.pdf";
+// import { Link } from "react-router-dom";
+// import CV from "../assets/Habib-Ritonga.pdf";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -43,7 +43,7 @@ const Navbar = () => {
         <li className="bg-[linear-gradient(134deg,_#3BF686_40.75%,_#4CA9FF_90.52%)] hover:text-transparent bg-clip-text xl:hover:scale-110 cursor-pointer p-2">
           <a href="/#projects">Projects</a>
         </li>
-        <li className="bg-[linear-gradient(134deg,_#3BF686_40.75%,_#4CA9FF_90.52%)] hover:text-transparent bg-clip-text xl:hover:scale-110 cursor-pointer p-2">
+        {/* <li className="bg-[linear-gradient(134deg,_#3BF686_40.75%,_#4CA9FF_90.52%)] hover:text-transparent bg-clip-text xl:hover:scale-110 cursor-pointer p-2">
           <a
             href={CV}
             download="CV-Habib Ritonga"
@@ -52,7 +52,7 @@ const Navbar = () => {
           >
             CV/resume
           </a>
-        </li>
+        </li> */}
         <li className="bg-[linear-gradient(134deg,_#3BF686_40.75%,_#4CA9FF_90.52%)] hover:text-transparent bg-clip-text xl:hover:scale-110 cursor-pointer p-2">
           <a href="/#contact">Contact</a>
         </li>

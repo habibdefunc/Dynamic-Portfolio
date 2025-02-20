@@ -23,7 +23,7 @@ const Main = () => {
             What I do
           </div>
           <div className="text-[10px] md:text-[18px] text-[#d6d6d6] ">
-            I'm a student and freelancer ready to whip up some powerful and
+            I'm a freelancer web developer ready to whip up some powerful and
             killer web apps for you!
           </div>
         </div>
@@ -36,8 +36,8 @@ const Main = () => {
               Freelance
             </div>
             <div className="text-slate-400 text-[14px] tracking-[1px] leading-6">
-              Most of the freelance work I take is as a web developer, but also
-              open for opportunity
+              Most of the freelance work I take is as a web development, but
+              also open for opportunity
             </div>
           </div>
           <div className="relative flex flex-col justify-center items-center px-3 pt-8 pb-4 w-[262px] bg-[#323443] rounded-[12px] mt-[36px] md:mt-0 hover:scale-110 ease-in-out duration-300">
@@ -85,7 +85,7 @@ const Main = () => {
               </a>
             </div>
             <div className="hover:scale-[150%] ease-in-out duration-300 cursor-pointer">
-              <a href="https://www.twitter.com/mhdnaufalhrtg" target="__blank">
+              <a href="https://www.twitter.com/mhdnaufalhartg" target="__blank">
                 {twitter}
               </a>
             </div>
