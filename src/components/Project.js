@@ -23,14 +23,14 @@ const Projects = () => {
           title="SIJARA (2025)"
           backgroundImg={sijara}
           projectUrl=""
-          desc={"Web Sistem Informasi Penjadwalan Rapat"}
+          desc={" Sistem Informasi Penjadwalan Rapat"}
           tech="ExpressJS, Typescript,ReactJS, TailwindCSS and MySQL"
         />
         <ProjectItem
           title="API-JWT (2024)"
           backgroundImg={RestApi}
           projectUrl="https://github.com/habibdefunc/API-JWT.git"
-          desc={"Restfull API Menggunakan JSON Web Token"}
+          desc={"Restfull API Menggunakan JWT"}
           tech="ExpressJS, JWT and MySQL"
         />
         <ProjectItem
@@ -51,7 +51,7 @@ const Projects = () => {
           title="Bja Coatings (2023)"
           backgroundImg={bjaCoatings}
           projectUrl="https://bjacoatings.com"
-          desc={"Website Profile Company Bja Coatings"}
+          desc={" Profile Company Bja Coatings"}
           tech="ReactJS, and TailwindCSS"
         />
       </div>
