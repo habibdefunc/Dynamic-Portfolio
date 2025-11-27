@@ -1,6 +1,3 @@
-/** @format */
-
-import React from "react";
 import {
   globe,
   hamburgerMenu,
@@ -23,34 +20,39 @@ const Main = () => {
             What I do
           </div>
           <div className="text-[10px] md:text-[18px] text-[#d6d6d6] ">
-            I'm a freelancer web developer ready to whip up some powerful and
-            killer web apps for you!
+            I'm a web developer ready to whip up some powerful and killer web
+            apps for you!
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center md:justify-normal md:flex-row  gap-[30px]  flex-[3]">
-          <div className="relative flex flex-col justify-center items-center px-3 pt-8 pb-4 w-[262px] bg-[#323443] rounded-[12px] mt-[36px] md:mt-0 hover:scale-110 ease-in-out duration-300">
-            <div className="absolute top-[-36px] p-[1px] rounded-full bg-[linear-gradient(134deg,_#3BF686_40.75%,_#4CA9FF_90.52%)]">
-              <div className="bg-[#3A3636] p-[17px] rounded-full">{globe}</div>
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-6 flex-[3]">
+          {/* Card 1 */}
+          <div className="relative flex flex-col items-center text-center px-4 pt-12 pb-6 w-[262px] min-h-[230px] bg-[#323443] rounded-xl hover:scale-110 transition-transform duration-300">
+            <div className="absolute -top-6 p-[1px] rounded-full bg-[linear-gradient(134deg,#3BF686_40.75%,#4CA9FF_90.52%)]">
+              <div className="bg-[#3A3636] p-4 rounded-full">{globe}</div>
             </div>
-            <div className="font-sora text-white text-[16px] font-semibold leading-[72px] tracking-[1px]">
-              Freelance
-            </div>
-            <div className="text-slate-400 text-[14px] tracking-[1px] leading-6">
-              Most of the freelance work I take is as a web development, but
-              also open for opportunity
-            </div>
+
+            <h3 className="font-sora text-white text-[16px] font-semibold tracking-wider leading-6 mt-4">
+              Make a modern website
+            </h3>
+
+            <p className="text-slate-400 text-[14px] tracking-wide leading-6 mt-2">
+              Most of the work I take is make a modern website
+            </p>
           </div>
-          <div className="relative flex flex-col justify-center items-center px-3 pt-8 pb-4 w-[262px] bg-[#323443] rounded-[12px] mt-[36px] md:mt-0 hover:scale-110 ease-in-out duration-300">
-            <div className="absolute top-[-36px] p-[1px] rounded-full bg-[linear-gradient(134deg,_#3BF686_40.75%,_#4CA9FF_90.52%)]">
-              <div className="bg-[#3A3636] p-[17px] rounded-full">{globe}</div>
+
+          {/* Card 2 */}
+          <div className="relative flex flex-col items-center text-center px-4 pt-12 pb-6 w-[262px] min-h-[230px] bg-[#323443] rounded-xl hover:scale-110 transition-transform duration-300">
+            <div className="absolute -top-6 p-[1px] rounded-full bg-[linear-gradient(134deg,#3BF686_40.75%,#4CA9FF_90.52%)]">
+              <div className="bg-[#3A3636] p-4 rounded-full">{globe}</div>
             </div>
-            <div className="font-sora text-white text-[16px] font-semibold leading-[72px] tracking-[1px]">
-              Student
-            </div>
-            <div className="text-slate-400 text-[14px] tracking-[1px] leading-6">
-              Currently studying Computer Science at the State Islamic
-              University of North Sumatra
-            </div>
+
+            <h3 className="font-sora text-white text-[16px] font-semibold tracking-wider leading-6 mt-4">
+              Backend entusiast
+            </h3>
+
+            <p className="text-slate-400 text-[14px] tracking-wide leading-6 mt-2">
+              Don't hesitate to contact me if you need a backend developer
+            </p>
           </div>
         </div>
       </div>

@@ -1,7 +1,3 @@
-/** @format */
-
-import React from "react";
-
 const About = () => {
   return (
     <div>
@@ -19,37 +15,26 @@ const About = () => {
         />
         <div className="bg-[#323443] p-[20px] text-slate-400 rounded-[20px] md:mr-20">
           <p>
-            Hello! My name is Habib Ritonga, a web developer with a deep passion
-            for coding. My interest in web development started from my curiosity
-            about how websites work and how technology can be used to create
-            impactful digital solutions.
+            Hi, I'm Habib Ritonga, a web developer with a strong passion for
+            building digital solutions. I started learning web development from
+            curiosity about how websites work.
           </p>
           <br />
           <p>
-            I began my journey by learning the basics of HTML and CSS, then
-            progressed to technologies like JavaScript, PHP, CodeIgniter,
-            Laravel, Node.js, Express.js, TypeScript, and React.js. The more I
-            explored, the more I realized that coding is not just about writing
-            lines of code but also about problem-solving and creativity.
+            My journey began with HTML and CSS, and grew into JavaScript, PHP,
+            CodeIgniter, Laravel, Node.js, Express.js, TypeScript, React.js, and
+            Go.
           </p>
           <br />
           <p>
-            In addition to self-learning, I have honed my skills by working on
-            various projects, from academic assignments to freelance projects. I
-            have collaborated with a range of clients, from classmates to
-            companies, and these experiences have enriched my knowledge in web
-            development.
+            I've strengthened my skills through academic and freelance projects,
+            collaborating with individuals and companies.
           </p>
           <br />
           <p>
-            Currently, my main focus is on backend development, specifically
-            using Express.js with TypeScript. I enjoy building scalable,
-            efficient, and well-structured APIs while ensuring robust system
-            architecture. However, I also explore frontend development to keep a
-            well-rounded skill set. I am always eager to learn new technologies
-            and develop innovative solutions. If you're interested in
-            collaborating, feel free to reach out. Thank you for visiting my
-            portfolio!
+            Currently, I focus on backend development with Go Lang, while still
+            exploring frontend to stay well-rounded. Open to
+            collaboration—thanks for visiting!
           </p>
         </div>
       </div>

@@ -1,5 +1,3 @@
-/** @format */
-
 // import { Link } from "react-router-dom";
 // import { AiOutlineMail } from "react-icons/ai";
 // import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -78,6 +76,23 @@ const Contact = () => {
                 target="_blank"
                 className="text-black"
               >
+                {/* Metadata untuk email */}
+                <input
+                  type="hidden"
+                  name="form-name"
+                  value="portfolio-contact-form"
+                />
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="New Message From Portfolio Website!"
+                />
+                <input
+                  type="hidden"
+                  name="_redirect"
+                  value="https://your-domain.com/thank-you"
+                />
+
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2 ">
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">Name</label>
@@ -98,6 +113,7 @@ const Contact = () => {
                     />
                   </div>
                 </div>
+
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Email</label>
                   <input
@@ -106,6 +122,7 @@ const Contact = () => {
                     name="email"
                   />
                 </div>
+
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Subject</label>
                   <input
@@ -114,6 +131,7 @@ const Contact = () => {
                     name="subject"
                   />
                 </div>
+
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Message</label>
                   <textarea

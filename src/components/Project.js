@@ -1,11 +1,6 @@
-import React from "react";
-
-import absensi from "../assets/Selamat-Datang-Isti-.png";
-
 import Aerosphere from "../assets/AeroSphere.png";
 import bjaCoatings from "../assets/bjacoatings-com.png";
-import sijara from "../assets/Picture1.png";
-import RestApi from "../assets/jwt1.png";
+import pesonasumuttrans from "../assets/pesona-sumut-trans.png";
 
 import ProjectItem from "./ProjectItem";
 
@@ -20,39 +15,26 @@ const Projects = () => {
 
       <div className="grid p-8 md:p-12 md:grid-cols-2 gap-8">
         <ProjectItem
-          title="SIJARA (2025)"
-          backgroundImg={sijara}
-          projectUrl=""
-          desc={" Sistem Informasi Penjadwalan Rapat"}
-          tech="ExpressJS, Typescript,ReactJS, TailwindCSS and MySQL"
+          title="Pesona Sumut Trans"
+          backgroundImg={pesonasumuttrans}
+          projectUrl="https://pesonasumuttrans.com"
+          desc={"Profesional Company Profile PT. Pesona Sumut Trans"}
+          tech="ReactJS and TailwindCSS"
+        />
+
+        <ProjectItem
+          title="Bja Coatings"
+          backgroundImg={bjaCoatings}
+          projectUrl="https://epoxylantaimedan.com"
+          desc={" Professional Company Profile CV. BJA Coatings"}
+          tech="ReactJS and TailwindCSS"
         />
         <ProjectItem
-          title="API-JWT (2024)"
-          backgroundImg={RestApi}
-          projectUrl="https://github.com/habibdefunc/API-JWT.git"
-          desc={"Restfull API Menggunakan JWT"}
-          tech="ExpressJS, JWT and MySQL"
-        />
-        <ProjectItem
-          title="SI-ABSENSI (2023)"
-          backgroundImg={absensi}
-          projectUrl=""
-          desc={"Web Absensi Siswa Untuk Sekolah."}
-          tech="ReactJS, ExpressJS and MySQL"
-        />
-        <ProjectItem
-          title="AeroSphere (2023)"
+          title="AeroSphere"
           backgroundImg={Aerosphere}
           projectUrl="https://aerosphere.netlify.app"
-          desc={"Web Pemantau Cuaca Di Sekitar Anda!"}
-          tech="ReactJS, and TailwindCSS"
-        />
-        <ProjectItem
-          title="Bja Coatings (2023)"
-          backgroundImg={bjaCoatings}
-          projectUrl="https://bjacoatings.com"
-          desc={" Profile Company Bja Coatings"}
-          tech="ReactJS, and TailwindCSS"
+          desc={"Your Local Weather Monitor!"}
+          tech="ReactJS, TailwindCSS, and Weather API"
         />
       </div>
     </div>
