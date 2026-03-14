@@ -13,7 +13,7 @@ const Projects = () => {
         </h1>
       </div>
 
-      <div className="grid p-8 md:p-12 md:grid-cols-2 gap-8">
+      <div className="flex flex-wrap justify-center gap-8 p-8 md:p-12">
         <ProjectItem
           title="Pesona Sumut Trans"
           backgroundImg={pesonasumuttrans}

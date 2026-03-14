@@ -16,25 +16,27 @@ const About = () => {
         <div className="bg-[#323443] p-[20px] text-slate-400 rounded-[20px] md:mr-20">
           <p>
             Hi, I'm Habib Ritonga, a web developer with a strong passion for
-            building digital solutions. I started learning web development from
-            curiosity about how websites work.
+            building digital solutions. I began learning web development out of
+            curiosity about how websites work and how they can solve real
+            problems.
           </p>
           <br />
           <p>
-            My journey began with HTML and CSS, and grew into JavaScript, PHP,
-            CodeIgniter, Laravel, Node.js, Express.js, TypeScript, React.js, and
-            Go.
+            My journey started with HTML and CSS, then grew into JavaScript,
+            Node.js, Express.js, TypeScript, React.js, and Go as I built more
+            complex projects.
           </p>
           <br />
           <p>
             I've strengthened my skills through academic and freelance projects,
-            collaborating with individuals and companies.
+            collaborating with individuals and companies to deliver real-world
+            results.
           </p>
           <br />
           <p>
-            Currently, I focus on backend development with Go Lang, while still
-            exploring frontend to stay well-rounded. Open to
-            collaborationâ€”thanks for visiting!
+            Currently, I focus on backend development with Go and Express, while
+            still exploring frontend to stay well-rounded. Open to
+            collaboration—thanks for visiting!
           </p>
         </div>
       </div>

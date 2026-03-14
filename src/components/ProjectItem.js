@@ -1,8 +1,6 @@
-import { Link } from "react-router-dom";
-
 const ProjectItem = ({ title, backgroundImg, desc, tech, projectUrl }) => {
   return (
-    <div className="relative flex flex-col items-center justify-center w-full shadow-xl shadow-slate-600 rounded-xl group overflow-hidden hover:scale-[1.05] duration-500">
+    <div className="relative flex flex-col items-center justify-center w-full sm:w-[calc(50%-2rem)] lg:w-[calc(33.333%-2rem)] shadow-xl shadow-slate-600 rounded-xl group overflow-hidden hover:scale-[1.05] duration-500">
       {/* Gambar tampil UTUH */}
       <img
         className="rounded-xl w-full object-contain bg-black"
@@ -25,11 +23,11 @@ const ProjectItem = ({ title, backgroundImg, desc, tech, projectUrl }) => {
             {tech}
           </p>
 
-          <Link to={projectUrl}>
+          <a href={projectUrl} target="_blank" rel="noreferrer">
             <p className="text-center py-3 rounded-lg bg-[linear-gradient(134deg,#3BF686_40.75%,#4CA9FF_90.52%)] font-bold text-sm sm:text-lg cursor-pointer hover:shadow-md hover:shadow-slate-500 duration-300">
               Go to Website
             </p>
-          </Link>
+          </a>
         </div>
       </div>
     </div>
