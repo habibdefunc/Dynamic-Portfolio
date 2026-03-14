@@ -1,10 +1,4 @@
-import {
-  globe,
-  hamburgerMenu,
-  instagram,
-  rightArrow,
-  twitter,
-} from "../assets/svg/svg";
+import { globe, instagram, twitter } from "../assets/svg/svg";
 
 const Main = () => {
   return (

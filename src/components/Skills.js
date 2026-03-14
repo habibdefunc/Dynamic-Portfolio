@@ -2,7 +2,6 @@ import {
   SiTailwindcss,
   SiMysql,
   SiPostgresql,
-  SiLaravel,
   SiGo,
   SiExpress,
 } from "react-icons/si";
