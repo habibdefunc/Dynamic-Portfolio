@@ -1,6 +1,7 @@
 import Aerosphere from "../assets/AeroSphere.png";
 import bjaCoatings from "../assets/bjacoatings-com.png";
 import pesonasumuttrans from "../assets/pesona-sumut-trans.png";
+import rahmatnauliflora from "../assets/rahmatnauliflora.png";
 
 import ProjectItem from "./ProjectItem";
 
@@ -14,6 +15,13 @@ const Projects = () => {
       </div>
 
       <div className="flex flex-wrap justify-center gap-8 p-8 md:p-12">
+        <ProjectItem
+          title="Rahmat Nauli Flora"
+          backgroundImg={rahmatnauliflora}
+          projectUrl="https://rahmatnauli.com"
+          desc={"Profesional Company Profile Rahmat Nauli Flora"}
+          tech="ReactJS and TailwindCSS"
+        />
         <ProjectItem
           title="Pesona Sumut Trans"
           backgroundImg={pesonasumuttrans}
