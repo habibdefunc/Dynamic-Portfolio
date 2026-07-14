@@ -2,6 +2,7 @@ import Aerosphere from "../assets/AeroSphere.png";
 import bjaCoatings from "../assets/bjacoatings-com.png";
 import pesonasumuttrans from "../assets/pesona-sumut-trans.png";
 import rahmatnauliflora from "../assets/rahmatnauliflora.png";
+import sipensa from "../assets/sipensa.png";
 
 import ProjectItem from "./ProjectItem";
 
@@ -21,6 +22,13 @@ const Projects = () => {
           projectUrl="https://rahmatnauli.com"
           desc={"Profesional Company Profile Rahmat Nauli Flora"}
           tech="ReactJS and TailwindCSS"
+        />
+         <ProjectItem
+          title="Sipensa"
+          backgroundImg={sipensa}
+          projectUrl=""
+          desc={"Sistem Penilaian Sanksi Akademik"}
+          tech="Laravel, Breeze, TailwindCSS, and MySQL"
         />
         <ProjectItem
           title="Pesona Sumut Trans"
@@ -44,6 +52,7 @@ const Projects = () => {
           desc={"Your Local Weather Monitor!"}
           tech="ReactJS, TailwindCSS, and Weather API"
         />
+        
       </div>
     </div>
   );

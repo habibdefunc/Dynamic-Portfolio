@@ -2,7 +2,8 @@ import {
   SiTailwindcss,
   SiMysql,
   SiPostgresql,
-  SiGo,
+  SiTypescript,
+  SiLaravel,
 } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 
@@ -13,23 +14,23 @@ const Skills = () => {
         here are the tech stack I have
       </div>
       <div className="flex flex-wrap justify-center gap-8 p-4">
-        <div className="w-full sm:w-[calc(50%-2rem)] lg:w-[calc(33.333%-2rem)] p-6 shadow-xl rounded-xl hover:shadow-xl hover:shadow-[skyblue] bg-slate-400 text-navbar hover:scale-[1.1] ease-in duration-300">
+        <div className="w-full sm:w-[calc(50%-2rem)] lg:w-[calc(33.333%-2rem)] p-6 shadow-xl rounded-xl hover:shadow-xl hover:shadow-[blue] bg-slate-400 text-navbar hover:scale-[1.1] ease-in duration-300">
           <div className="grid grid-cols-2 gap-4 justify-center items-center">
             <div className="m-auto">
-              <SiGo className="text-8xl" />
+              <SiTypescript className="text-8xl" />
             </div>
             <div className="flex flex-col items-center justify-center">
-              <h3 className="text-4xl">Go</h3>
+              <h3 className="text-4xl">Tyescript</h3>
             </div>
           </div>
         </div>
-        <div className="w-full sm:w-[calc(50%-2rem)] lg:w-[calc(33.333%-2rem)] p-6 shadow-xl rounded-xl hover:shadow-xl hover:shadow-[green] bg-slate-400 text-navbar hover:scale-[1.1] ease-in duration-300">
+          <div className="w-full sm:w-[calc(50%-2rem)] lg:w-[calc(33.333%-2rem)] p-6 shadow-xl rounded-xl hover:shadow-xl hover:shadow-[#EF4444] bg-slate-400 text-navbar hover:scale-[1.1] ease-in duration-300">
           <div className="grid grid-cols-2 gap-4 justify-center items-center">
             <div className="m-auto">
-              <SiPostgresql className="text-8xl" />
+              <SiLaravel className="text-8xl" />
             </div>
             <div className="flex flex-col items-center justify-center">
-              <h3 className="text-3xl">PostgreSQL</h3>
+              <h3 className="text-4xl">Laravel</h3>
             </div>
           </div>
         </div>
@@ -43,6 +44,17 @@ const Skills = () => {
             </div>
           </div>
         </div>
+        <div className="w-full sm:w-[calc(50%-2rem)] lg:w-[calc(33.333%-2rem)] p-6 shadow-xl rounded-xl hover:shadow-xl hover:shadow-[green] bg-slate-400 text-navbar hover:scale-[1.1] ease-in duration-300">
+          <div className="grid grid-cols-2 gap-4 justify-center items-center">
+            <div className="m-auto">
+              <SiPostgresql className="text-8xl" />
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <h3 className="text-3xl">PostgreSQL</h3>
+            </div>
+          </div>
+        </div>
+        
         <div className="w-full sm:w-[calc(50%-2rem)] lg:w-[calc(33.333%-2rem)] p-6 shadow-xl rounded-xl hover:shadow-xl hover:shadow-[blue] bg-slate-400 text-navbar hover:scale-[1.1] ease-in duration-300">
           <div className="grid grid-cols-2 gap-4 justify-center items-center">
             <div className="m-auto">

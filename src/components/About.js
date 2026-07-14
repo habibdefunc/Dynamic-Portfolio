@@ -23,7 +23,7 @@ const About = () => {
           <br />
           <p>
             My journey started with HTML and CSS, then grew into JavaScript,
-            Node.js, Express.js, TypeScript, React.js, and Go as I built more
+            Node.js, Express.js, TypeScript, React.js, and Laravel as I built more
             complex projects.
           </p>
           <br />
@@ -36,7 +36,7 @@ const About = () => {
           <p>
             Currently, I focus on backend development with Go and Express, while
             still exploring frontend to stay well-rounded. Open to
-            collaboration—thanks for visiting!
+            collaborationï¿½thanks for visiting!
           </p>
         </div>
       </div>
