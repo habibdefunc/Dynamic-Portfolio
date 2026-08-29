@@ -2,33 +2,25 @@ import Aerosphere from "../assets/AeroSphere.png";
 import bjaCoatings from "../assets/bjacoatings-com.png";
 import pesonasumuttrans from "../assets/pesona-sumut-trans.png";
 import rahmatnauliflora from "../assets/rahmatnauliflora.png";
-import sipensa from "../assets/sipensa.png";
 
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-full ">
+    <div id="projects" className="reveal-section w-full" style={{ animationDelay: '0.2s' }}>
       <div className="flex flex-col">
         <h1 className="text-[20px] md:text-[40px] font-sora text-[#FBFBFB] md:leading-[72px]">
           What Recent I have Build
         </h1>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-8 p-8 md:p-12">
+      <div className="grid grid-cols-1 gap-6 p-4 sm:grid-cols-2 sm:p-8 xl:grid-cols-3 xl:px-20">
         <ProjectItem
           title="Rahmat Nauli Flora"
           backgroundImg={rahmatnauliflora}
           projectUrl="https://rahmatnauli.com"
           desc={"Profesional Company Profile Rahmat Nauli Flora"}
           tech="ReactJS and TailwindCSS"
-        />
-         <ProjectItem
-          title="Sipensa"
-          backgroundImg={sipensa}
-          projectUrl=""
-          desc={"Sistem Penilaian Sanksi Akademik"}
-          tech="Laravel, Breeze, TailwindCSS, and MySQL"
         />
         <ProjectItem
           title="Pesona Sumut Trans"
@@ -52,7 +44,6 @@ const Projects = () => {
           desc={"Your Local Weather Monitor!"}
           tech="ReactJS, TailwindCSS, and Weather API"
         />
-        
       </div>
     </div>
   );

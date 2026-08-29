@@ -1,9 +1,15 @@
-import { globe, instagram, twitter } from "../assets/svg/svg";
+import { globe, instagram } from "../assets/svg/svg";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import profileAvatar from '../assets/icon-portofolio.png';
 
 const Main = () => {
   return (
-    <div id="home" className="md:py-[30px] py-[30px] flex flex-col gap-63px">
-      <div className=" font-sora font-bold md:text-[56px] text-[24px] md:leading-[72px] md:tracking-[1px] w-full md:w-[80%] bg-[linear-gradient(134deg,_#3BF686_40.75%,_#4CA9FF_90.52%)] text-transparent bg-clip-text">
+    <div
+      id="home"
+      className="reveal-section md:py-[30px] py-[30px] flex flex-col gap-63px"
+      style={{ animationDelay: '0.05s' }}
+    >
+      <div className="font-sora font-bold md:text-[56px] text-[24px] md:leading-[72px] md:tracking-[1px] w-full md:w-[80%] bg-[linear-gradient(134deg,_#3BF686_40.75%,_#4CA9FF_90.52%)] text-transparent bg-clip-text">
         Hi, I'm HabibFnc, a web developer who's got your back for making an
         awesome website just the way you want it!
       </div>
@@ -54,7 +60,7 @@ const Main = () => {
         <div className="flex md:items-start items-center justify-center md:justify-normal gap-3">
           <div className="md:w-[157px] md:h-[157px] w-[50px] h-[50px] rounded-full bg-[linear-gradient(134deg,_#3BF686_40.75%,_#4CA9FF_90.52%)] flex justify-center items-center">
             <div className="md:w-[155px] md:h-[155px] w-[49px] h-[49px]  rounded-full bg-[#3A3636]">
-              <img src={require("../assets/icon-portofolio.png")} alt="" />
+              <img src={profileAvatar} alt="HabibFnc portrait" />
             </div>
           </div>
           <div className="flex flex-col ml-2 md:ml-9 mr-5 flex-1 max-w-[499px] ">
@@ -81,8 +87,13 @@ const Main = () => {
               </a>
             </div>
             <div className="hover:scale-[150%] ease-in-out duration-300 cursor-pointer">
-              <a href="https://www.twitter.com/mhdnaufalhartg" target="__blank">
-                {twitter}
+              <a href="https://github.com/habibdefunc" target="__blank">
+                <FaGithub className="text-2xl" />
+              </a>
+            </div>
+            <div className="hover:scale-[150%] ease-in-out duration-300 cursor-pointer">
+              <a href="" target="__blank">
+                <FaLinkedin className="text-2xl" />
               </a>
             </div>
           </div>

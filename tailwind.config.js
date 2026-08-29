@@ -1,18 +1,17 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
-        "black-2" : '#272727'
+        'black-2': '#272727',
+        navbar: '#F7F8FC',
       },
       fontFamily: {
-        "poppins" : ['Poppins', "sans-serif"],
-        "sora" : ['Sora', "sans-serif"]
-      }
+        poppins: ['Poppins', 'sans-serif'],
+        sora: ['Sora', 'sans-serif'],
+      },
     },
   },
   plugins: [],
-}
+};
