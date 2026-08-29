@@ -2,6 +2,7 @@
 // import { AiOutlineMail } from "react-icons/ai";
 // import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import profilePhoto from '../assets/pp4.jpg';
 // import CV from "../assets/Habib-Ritonga.pdf";
@@ -35,21 +36,32 @@ const Contact = () => {
                   I am available for freelance or full-time positions. Contact
                   me and lets talk.
                 </p>
+                <a
+                  href="mailto:devdothabib@gmail.com"
+                  className="inline-block py-2 text-xs sm:text-sm text-[#3BF686] hover:text-white transition-colors"
+                >
+                  devdothabib@gmail.com
+                </a>
               </div>
               <div>
                 <p className="uppercase pt-6 sm:pt-8 font-poppins text-xs sm:text-sm">Connect With Me</p>
                 <div className="flex items-center justify-center gap-3 sm:gap-4 py-3 sm:py-4">
-                  <a href="https://www.instagram.com/mhdnaufalhartg/">
+                  <a href="https://www.instagram.com/mhdnaufalhartg/" target="_blank" rel="noreferrer">
                     <div className="rounded-full shadow-lg hover:shadow-white bg-[linear-gradient(134deg,_#3BF686_40.75%,_#4CA9FF_90.52%)] p-2 sm:p-3 md:p-6 cursor-pointer hover:scale-110 ease-in duration-300 transition-all">
                       <FaInstagram className="text-navbar text-lg sm:text-xl md:text-2xl" />
                     </div>
                   </a>
-                  <a href="https://github.com/habibdefunc">
+                  <a href="mailto:devdothabib@gmail.com" target="_blank" rel="noreferrer">
+                    <div className="rounded-full shadow-lg hover:shadow-white bg-[linear-gradient(134deg,_#3BF686_40.75%,_#4CA9FF_90.52%)] p-2 sm:p-3 md:p-6 cursor-pointer hover:scale-110 ease-in duration-300 transition-all">
+                      <SiGmail className="text-navbar text-lg sm:text-xl md:text-2xl" />
+                    </div>
+                  </a>
+                  <a href="https://github.com/habibdefunc" target="_blank" rel="noreferrer">
                     <div className="rounded-full shadow-lg hover:shadow-white bg-[linear-gradient(134deg,_#3BF686_40.75%,_#4CA9FF_90.52%)] p-2 sm:p-3 md:p-6 cursor-pointer hover:scale-110 ease-in duration-300 transition-all">
                       <FaGithub className="text-navbar text-lg sm:text-xl md:text-2xl" />
                     </div>
                   </a>
-                  <a href="">
+                  <a href="" target="_blank" rel="noreferrer">
                     <div className="rounded-full shadow-lg hover:shadow-white bg-[linear-gradient(134deg,_#3BF686_40.75%,_#4CA9FF_90.52%)] p-2 sm:p-3 md:p-6 cursor-pointer hover:scale-110 ease-in duration-300 transition-all">
                       <FaLinkedin className="text-navbar text-lg sm:text-xl md:text-2xl" />
                     </div>
