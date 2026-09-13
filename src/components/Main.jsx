@@ -1,6 +1,6 @@
 import { globe, instagram } from "../assets/svg/svg";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
+import { SiGmail, SiInstagram } from "react-icons/si";
 import profileAvatar from '../assets/icon-portofolio.png';
 
 const Main = () => {
@@ -79,12 +79,9 @@ const Main = () => {
             Lets Connect
           </div>
           <div className="flex gap-[17px] flex-wrap">
-            <div className="hover:scale-[150%] ease-in-out duration-300 cursor-pointer">
-              <a
-                href="https://www.instagram.com/mhdnaufalhartg"
-                target="__blank"
-              >
-                {instagram}
+             <div className="hover:scale-[150%] ease-in-out duration-300 cursor-pointer">
+              <a href="https://www.instagram.com/mhdnaufalhartg" target="_blank" rel="noreferrer">
+                <SiInstagram className="text-2xl" />
               </a>
             </div>
             <div className="hover:scale-[150%] ease-in-out duration-300 cursor-pointer">
@@ -95,11 +92,6 @@ const Main = () => {
             <div className="hover:scale-[150%] ease-in-out duration-300 cursor-pointer">
               <a href="https://github.com/habibdefunc" target="__blank" rel="noreferrer">
                 <FaGithub className="text-2xl" />
-              </a>
-            </div>
-            <div className="hover:scale-[150%] ease-in-out duration-300 cursor-pointer">
-              <a href="" target="__blank" rel="noreferrer">
-                <FaLinkedin className="text-2xl" />
               </a>
             </div>
           </div>
