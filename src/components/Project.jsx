@@ -2,6 +2,7 @@ import Aerosphere from "../assets/AeroSphere.png";
 import bjaCoatings from "../assets/bjacoatings-com.png";
 import pesonasumuttrans from "../assets/pesona-sumut-trans.png";
 import rahmatnauliflora from "../assets/rahmatnauliflora.png";
+import lpmdashboard from "../assets/LPM-Monitor.png";
 
 import ProjectItem from "./ProjectItem";
 
@@ -14,7 +15,28 @@ const Projects = () => {
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 gap-6 p-4 sm:grid-cols-2 sm:p-8 xl:grid-cols-3 xl:px-20">
+      <div className="flex flex-wrap justify-center gap-6 p-4 sm:p-8 xl:px-20">
+
+         <ProjectItem
+          title="LPM Monitor (2026)"
+          accounts={[
+            { role: "ADMIN", username: "admin123", password: "admin123" },
+            { role: "STAF", username: "test123", password: "test123" },
+          ]}
+          backgroundImg={lpmdashboard}
+          projectUrl="https://lpm-monitor-dashboard-web.vercel.app"
+          desc={"Web Dashboard for Quality Assurance Institute Activity Monitoring"}
+          tech="TypeScript, NodeJs, ExpressJs, PostgreSQL, ReactJS, and TailwindCSS"
+        />
+
+      <ProjectItem
+          title="AeroSense (2026)"
+          backgroundImg={Aerosphere}
+          projectUrl="https://aerosenses.vercel.app"
+          desc={"Your Local Weather Monitor!"}
+          tech="ReactJS, TailwindCSS, and WAQI API"
+        />
+
         <ProjectItem
           title="Rahmat Nauli Flora (2026)"
           backgroundImg={rahmatnauliflora}
@@ -23,13 +45,6 @@ const Projects = () => {
           tech="ReactJS and TailwindCSS"
         />
 
-        <ProjectItem
-          title="AeroSense (2026)"
-          backgroundImg={Aerosphere}
-          projectUrl="https://aerosenses.vercel.app"
-          desc={"Your Local Weather Monitor!"}
-          tech="ReactJS, TailwindCSS, and WAQI API"
-        />
         <ProjectItem
           title="Pesona Sumut Trans (2025)"
           backgroundImg={pesonasumuttrans}
