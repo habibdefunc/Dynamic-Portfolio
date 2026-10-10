@@ -1,166 +1,27 @@
-// import { Link } from "react-router-dom";
-// import { AiOutlineMail } from "react-icons/ai";
-// import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaInstagram } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
-import { HiOutlineChevronDoubleUp } from "react-icons/hi";
-import profilePhoto from '../assets/pp4.jpg';
-// import CV from "../assets/Habib-Ritonga.pdf";
+import { useState } from 'react';
+import { FiArrowUpRight, FiGithub, FiInstagram, FiMail, FiX } from 'react-icons/fi';
+import { Button } from './ui/Button';
 
-const Contact = () => {
-  return (
-    <div id="contact" className="reveal-section w-full text-[#FBFBFB]" style={{ animationDelay: '0.24s' }}>
-      <div className="flex flex-col ">
-        <h1 className="text-[20px] md:text-[40px] font-sora text-[#FBFBFB] md:leading-[72px]">
-          Get in Touch
-        </h1>
-      </div>
-      <div className="m-auto w-full font-ibm px-2 sm:px-4">
-        <div className="grid grid-cols-1 gap-4 sm:gap-6 lg:grid-cols-[1.1fr_1.9fr] lg:gap-8">
-          {/* left */}
-          <div className="w-full h-full shadow-xl bg-[#323443] rounded-xl p-3 sm:p-4">
-            <div className="h-full">
-              <div className="mb-3">
-                <img
-                  className="w-full rounded-xl object-cover aspect-[4/3] sm:aspect-square hover:scale-[1.02] ease-in duration-300"
-                  src={profilePhoto}
-                  alt="/"
-                />
-              </div>
-              <div className="font-poppins">
-                <h2 className="py-2 text-white font-bold text-xl sm:text-2xl">
-                  HabibFnc
-                </h2>
-                <p className="text-sm sm:text-base">Web Developer</p>
-                <p className="py-3 text-xs sm:text-sm leading-relaxed">
-                  I am available for freelance or full-time positions. Contact
-                  me and lets talk.
-                </p>
-                <a
-                  href="mailto:devdothabib@gmail.com"
-                  className="inline-block py-2 text-xs sm:text-sm text-[#3BF686] hover:text-white transition-colors"
-                >
-                  devdothabib@gmail.com
-                </a>
-              </div>
-              <div>
-                <p className="uppercase pt-6 sm:pt-8 font-poppins text-xs sm:text-sm">Connect With Me</p>
-                <div className="flex gap-3 sm:gap-4 py-3 sm:py-4">
-                  <a href="https://www.instagram.com/mhdnaufalhartg/" target="_blank" rel="noreferrer">
-                    <div className="rounded-full shadow-lg hover:shadow-white bg-[linear-gradient(134deg,_#3BF686_40.75%,_#4CA9FF_90.52%)] p-2 sm:p-3 md:p-6 cursor-pointer hover:scale-110 ease-in duration-300 transition-all">
-                      <FaInstagram className="text-navbar text-lg sm:text-xl md:text-2xl" />
-                    </div>
-                  </a>
-                  <a href="mailto:devdothabib@gmail.com" target="_blank" rel="noreferrer">
-                    <div className="rounded-full shadow-lg hover:shadow-white bg-[linear-gradient(134deg,_#3BF686_40.75%,_#4CA9FF_90.52%)] p-2 sm:p-3 md:p-6 cursor-pointer hover:scale-110 ease-in duration-300 transition-all">
-                      <SiGmail className="text-navbar text-lg sm:text-xl md:text-2xl" />
-                    </div>
-                  </a>
-                  <a href="https://github.com/habibdefunc" target="_blank" rel="noreferrer">
-                    <div className="rounded-full shadow-lg hover:shadow-white bg-[linear-gradient(134deg,_#3BF686_40.75%,_#4CA9FF_90.52%)] p-2 sm:p-3 md:p-6 cursor-pointer hover:scale-110 ease-in duration-300 transition-all">
-                      <FaGithub className="text-navbar text-lg sm:text-xl md:text-2xl" />
-                    </div>
-                  </a>
-      
-                </div>
-              </div>
-            </div>
-          </div>
+const socials = [
+  { label: 'GitHub', href: 'https://github.com/habibdefunc', Icon: FiGithub },
+  { label: 'Instagram', href: 'https://www.instagram.com/mhdnaufalhartg', Icon: FiInstagram },
+  { label: 'Email', href: 'mailto:devdothabib@gmail.com', Icon: FiMail },
+];
 
-          {/* right */}
-          <div className="w-full h-auto shadow-xl bg-[#323443] rounded-xl p-3 sm:p-4 lg:p-6">
-            <form
-              action="https://getform.io/f/ajjeopwa"
-              method="POST"
-              encType="multipart/form-data"
-              target="_blank"
-              className="text-black space-y-3 sm:space-y-4"
-            >
-              {/* Metadata untuk email */}
-              <input
-                type="hidden"
-                name="form-name"
-                value="portfolio-contact-form"
-              />
-              <input
-                type="hidden"
-                name="_subject"
-                value="New Message From Portfolio Website!"
-              />
-              <input
-                type="hidden"
-                name="_redirect"
-                value="https://your-domain.com/thank-you"
-              />
+export function Contact() {
+  const [formOpen, setFormOpen] = useState(false);
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                <div className="flex flex-col">
-                  <label className="uppercase text-xs sm:text-sm py-2 font-semibold">Name</label>
-                  <input
-                    className="border-2 rounded-lg p-2 sm:p-3 text-sm border-slate-300 outline-none focus:border-[#3BF686] transition-colors"
-                    type="text"
-                    name="name"
-                    required
-                  />
-                </div>
-                <div className="flex flex-col">
-                  <label className="uppercase text-xs sm:text-sm py-2 font-semibold">
-                    Phone Number
-                  </label>
-                  <input
-                    className="border-2 rounded-lg p-2 sm:p-3 text-sm border-slate-300 outline-none focus:border-[#3BF686] transition-colors"
-                    type="tel"
-                    name="phone"
-                  />
-                </div>
-              </div>
+  return <div className="contact-panel reveal">
+    <div className="contact-copy"><span className="contact-doodle">✿</span><h3>Let’s make something<br /><span>people love using.</span></h3><p>I’ve got room for a new project and I’d love to hear what you’re thinking.</p><Button aria-expanded={formOpen} aria-controls="contact-form" onClick={() => setFormOpen(!formOpen)} type="button">{formOpen ? 'Close message form' : 'Send me a message'} {formOpen ? <FiX /> : <FiArrowUpRight />}</Button></div>
+    <div className="contact-side"><span className="contact-note">Or drop by here</span><a className="contact-email" href="mailto:devdothabib@gmail.com">devdothabib@gmail.com <FiArrowUpRight /></a><div className="contact-socials">{socials.map(({ label, href, Icon }) => <a aria-label={label} href={href} key={label} rel="noreferrer" target="_blank"><Icon /></a>)}</div><span className="availability"><span className="online-dot" />Open to nice projects</span></div>
+    {formOpen && <form action="https://getform.io/f/ajjeopwa" className="contact-form" encType="multipart/form-data" id="contact-form" method="POST" target="_blank">
+      <input name="_subject" type="hidden" value="New Message From Portfolio Website!" />
+      <label>Name<input autoComplete="name" name="name" required /></label>
+      <label>Email<input autoComplete="email" name="email" required type="email" /></label>
+      <label className="contact-form-message">Message<textarea name="message" required rows="4" /></label>
+      <Button type="submit">Send message <FiArrowUpRight /></Button>
+    </form>}
+  </div>;
+}
 
-              <div className="flex flex-col">
-                <label className="uppercase text-xs sm:text-sm py-2 font-semibold">Email</label>
-                <input
-                  className="border-2 rounded-lg p-2 sm:p-3 text-sm border-slate-300 outline-none focus:border-[#3BF686] transition-colors"
-                  type="email"
-                  name="email"
-                  required
-                />
-              </div>
-
-              <div className="flex flex-col">
-                <label className="uppercase text-xs sm:text-sm py-2 font-semibold">Subject</label>
-                <input
-                  className="border-2 rounded-lg p-2 sm:p-3 text-sm border-slate-300 outline-none focus:border-[#3BF686] transition-colors"
-                  type="text"
-                  name="subject"
-                />
-              </div>
-
-              <div className="flex flex-col">
-                <label className="uppercase text-xs sm:text-sm py-2 font-semibold">Message</label>
-                <textarea
-                  className="border-2 rounded-lg p-2 sm:p-3 text-sm outline-none border-slate-300 focus:border-[#3BF686] transition-colors resize-none"
-                  rows="5"
-                  name="message"
-                  required
-                ></textarea>
-              </div>
-
-              <button className="w-full p-3 sm:p-4 bg-[linear-gradient(134deg,_#3BF686_40.75%,_#4CA9FF_90.52%)] text-navbar font-bold rounded-lg hover:scale-[1.02] transition-transform text-sm sm:text-base">
-                Send Message
-              </button>
-            </form>
-          </div>
-        </div>
-        <div className="flex justify-center py-12">
-          <a href="/#porto">
-            <div>
-              <div className="rounded-full shadow-lg hover:shadow-white bg-[linear-gradient(134deg,_#3BF686_40.75%,_#4CA9FF_90.52%)] p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-                <HiOutlineChevronDoubleUp className="text-navbar" size={30} />
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  );
-};
 export default Contact;
