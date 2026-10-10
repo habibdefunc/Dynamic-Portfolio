@@ -6,7 +6,7 @@ import pesonaSumut from '../assets/pesona-sumut-trans.png';
 import rahmatNauli from '../assets/rahmatnauliflora.png';
 
 const projects = [
-  { title: 'LPM Monitor', year: '2026', description: 'A quality assurance dashboard that makes campus activity easier to keep an eye on.', image: lpmdashboard, type: 'Dashboard', href: 'https://lpm-monitor-dashboard-web.vercel.app', tech: ['React', 'TypeScript', 'PostgreSQL'], demo: true },
+  { title: 'LPM Monitor', year: '2026', description: 'A quality assurance dashboard that makes campus activity easier to keep an eye on.', image: lpmdashboard, type: 'Dashboard', href: 'https://lpm-monitor-dashboard-web.vercel.app', tech: ['TypeScript', 'Express', 'PostgreSQL', 'React', 'Tailwind'], demo: true },
   { title: 'AeroSense', year: '2026', description: 'A friendly little window into the weather and air quality around you.', image: aerosphere, type: 'Web app', href: 'https://aerosenses.vercel.app', tech: ['React', 'Tailwind', 'WAQI API'] },
   { title: 'Rahmat Nauli Flora', year: '2026', description: 'A warm online home for a local plant and landscaping business.', image: rahmatNauli, type: 'Company site', href: 'https://rahmatnauli.com', tech: ['React', 'Tailwind'] },
   { title: 'Pesona Sumut Trans', year: '2025', description: 'A welcoming website for a local travel and transportation service.', image: pesonaSumut, type: 'Company site', href: 'https://pesonasumuttrans.com', tech: ['React', 'Tailwind'] },

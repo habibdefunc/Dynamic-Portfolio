@@ -2,13 +2,14 @@ import { FaReact } from 'react-icons/fa';
 import { SiExpress, SiMysql, SiNodedotjs, SiPostgresql, SiTailwindcss, SiTypescript } from 'react-icons/si';
 
 const skills = [
-  { name: 'React', group: 'Frontend', Icon: FaReact, color: 'blue' },
-  { name: 'TypeScript', group: 'Frontend', Icon: SiTypescript, color: 'blue' },
-  { name: 'Tailwind CSS', group: 'Frontend', Icon: SiTailwindcss, color: 'cyan' },
-  { name: 'Node.js', group: 'Backend', Icon: SiNodedotjs, color: 'green' },
-  { name: 'Express', group: 'Backend', Icon: SiExpress, color: 'plain' },
+ { name: 'Node.js', group: 'Backend', Icon: SiNodedotjs, color: 'green' },
+  { name: 'TypeScript', group: 'Backend', Icon: SiTypescript, color: 'blue' },
+   { name: 'Express', group: 'Backend', Icon: SiExpress, color: 'plain' },
+    { name: 'MySQL', group: 'Database', Icon: SiMysql, color: 'orange' },
   { name: 'PostgreSQL', group: 'Database', Icon: SiPostgresql, color: 'blue' },
-  { name: 'MySQL', group: 'Database', Icon: SiMysql, color: 'orange' },
+   { name: 'React', group: 'Frontend', Icon: FaReact, color: 'blue' },
+  { name: 'Tailwind CSS', group: 'Frontend', Icon: SiTailwindcss, color: 'cyan' },
+ 
 ];
 
 export function Skills() {
